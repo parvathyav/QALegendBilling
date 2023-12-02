@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.QALegendBilling.listeners.TestListener" />
+	</listeners>
+	<test thread-count="5" name="Parameter Testing-Grouping">
+		<parameter name="browser" value="chrome" />
+		<groups>
+			<run>
+				<include name="Regression" />
+				<exclude name="Smoke" />
+				<exclude name="Sanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.QALegendBilling.testscript.HomeTest1" />
+			<class name="com.QALegendBilling.testscript.LoginTest1" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
