@@ -57,7 +57,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
 						<suiteXmlFile>my_testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
+						</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
